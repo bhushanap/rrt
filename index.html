@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <p>Drag and adjust the start and goal points. Choose your choice of parameters and run!</p>
+  <div class="slider-container">
+    <div>
+      <span title="Number of closest neighbours to  compare with (for optimality)">Closest n neighbours: </span>
+      <input type="range" id="clpSlider" min="1" max="10" value="3">
+      <span id="clpValue">3</span>
+    </div>
+    <div>
+      <span title="Points closer than this will be ignored">Minimum threshold distance: </span>
+      <input type="range" id="thresholdSlider" min="1" max="500" value="20">
+      <span id="thresholdValue">20</span>
+    </div>
+  </div>
+  <div>
+    <span>Maximum step size: </span>
+    <input type="range" id="stepSizeSlider" min="1" max="500" value="50">
+    <span id="stepSizeValue">50</span>
+  </div>
+</div>
+  <div>
+    <span title="in miliseconds">Simulation speed: </span>
+    <input type="range" id="simSpeedSlider" min="1" max="5000" value="10">
+    <span id="simSpeedValue">10</span>
+  </div>
+</div>
+  <div>
+    <span>Choose Solver:</span>
+    <select id="solverSelector">
+      <option value="RRT">RRT Solver</option>
+      <option value="Djikstra">Djikstra Solver</option>
+    </select>
+  </div>
+</div>
+  <button id="executeButton">Run</button>
+  <button id="pauseButton">Pause</button>
+  <script src="utils.js"></script>
+  <script src="rrtsolver.js"></script>
+  <script src="djikstrasolver.js"></script>
+  <script src="borders.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
