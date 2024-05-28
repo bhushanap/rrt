@@ -33,7 +33,8 @@ Adjusting parameters such as the number of closest neighbors, minimum threshold 
 
 ## How to Use the Demo 🕹️
 
-- Open the Demo: Click here to access the demo.
+- Clone the repo: `git clone https://github.com/bhushanap/rrt`
+- Open the Demo: Click ![here](demo.html) or demo.html to open the demo in a browser
 - Drag Points: Drag the start and end points on the maze.
 - Customize Parameters: Adjust algorithm parameters like the number of closest neighbors, minimum threshold distance, maximum step size, and simulation speed.
 - Observe Pathfinding: Witness the algorithm finding the optimal path between the start and end points in real-time.
